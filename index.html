@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+  <script>
+    (function () {
+      // Spa Chatbot Widget Loader
+      const spaId = "636";
+      const script = document.createElement('script');
+      script.src = 'https://chatbot.bookingbot.in/bot.js?spa=' + spaId;
+      script.async = true;
+      script.setAttribute('data-spa', spaId);
+      document.head.appendChild(script);
+    })();
+  </script>
+
+  <!-- Event snippet for Purchase conversion page -->
+  <script>
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18053909388/d14zCIW9-JIcEIyX46BD',
+      'value': 1.0,
+      'currency': 'INR',
+      'transaction_id': ''
+      // 'new_customer': true /* calculate dynamically, populate with true/false */,
+    });
+  </script>
+
+  <!-- Event snippet for Purchase conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18053909388/d14zCIW9-JIcEIyX46BD',
+        'value': 1.0,
+        'currency': 'INR',
+        'transaction_id': '',
+        'event_callback': callback
+        // 'new_customer': true /* calculate dynamically, populate with true/false */,
+      });
+      return false;
+    }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18053909388">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18053909388');
+  </script>
+
+
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/Logo/fav.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Spa in Electronic City, Bangalore | Austin Spa</title>
+  <meta name="description"
+    content="Looking for the best spa in Electronic City? Austin Spa offers Thai, Swedish, and Deep Tissue massages. Book now for luxury wellness and relaxation!" />
+  <meta name="keywords"
+    content="best spa in electronic city, spa in electronic city, massage in electronic city, thai massage electronic city, body massage near me, luxury spa electronic city, swedish massage, deep tissue massage bangalore" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
